@@ -3,10 +3,10 @@ package common
 import (
 	"log"
 
-	"plex-beetbrainz/beets"
-	env "plex-beetbrainz/environ"
-	lb "plex-beetbrainz/listenbrainz"
-	"plex-beetbrainz/types"
+	"beetbrainz/beets"
+	env "beetbrainz/environ"
+	lb "beetbrainz/listenbrainz"
+	"beetbrainz/types"
 )
 
 type Request struct {
@@ -18,7 +18,7 @@ type Request struct {
 }
 
 func HandleRequest(r *Request) {
-	if r.MediaType != "track" {
+	if r.MediaType != "track" && r.MediaType != "Audio" {
 		log.Printf("Item '%s' is not a music item, skipping...", r.Item.String())
 		return
 	}

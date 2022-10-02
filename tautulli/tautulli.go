@@ -6,8 +6,8 @@ import (
 	"log"
 	"net/http"
 
-	"plex-beetbrainz/common"
-	"plex-beetbrainz/types"
+	"beetbrainz/common"
+	"beetbrainz/types"
 )
 
 type TautulliRequest struct {
@@ -26,7 +26,7 @@ func (r *TautulliRequest) String() string {
 
 func (r *TautulliRequest) AsMediaItem() *types.MediaItem {
 	return &types.MediaItem{
-		Artist: r.ArtistName,
+		Artist: r.TrackArtist,
 		Album:  r.AlbumName,
 		Track:  r.TrackName,
 	}

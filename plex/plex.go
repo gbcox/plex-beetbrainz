@@ -6,8 +6,8 @@ import (
 	"log"
 	"net/http"
 
-	"plex-beetbrainz/common"
-	"plex-beetbrainz/types"
+	"beetbrainz/common"
+	"beetbrainz/types"
 )
 
 type PlexItem struct {

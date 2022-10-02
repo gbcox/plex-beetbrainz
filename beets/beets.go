@@ -10,8 +10,8 @@ import (
 	"os"
 	"strings"
 
-	lb "plex-beetbrainz/listenbrainz"
-	"plex-beetbrainz/types"
+	lb "beetbrainz/listenbrainz"
+	"beetbrainz/types"
 )
 
 type BeetsData struct {
@@ -32,7 +32,7 @@ func (data *BeetsData) String() string {
 func GetMetadataForItem(item *types.MediaItem) (*lb.TrackMetadata, error) {
 	tm := lb.TrackMetadata{
 		AdditionalInfo: &lb.AdditionalInfo{
-			ListeningFrom: "Plex Media Server",
+			ListeningFrom: "Beetbrainz Media Server",
 		},
 		ArtistName:  item.Artist,
 		ReleaseName: item.Album,
