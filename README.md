@@ -1,3 +1,6 @@
+# I've forked plex-beetbrainz, made modifications (added emby support), and packaged for Fedora.  
+# More information can be found at https://codeberg.org/gbcox/beetbrainz
+
 # plex-beetbrainz
 Submit your listens from Plex to ListenBrainz. Integrates with [beets](https://github.com/beetbox/beets)
 for that important metadata.
